@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>BMI CALCULATOR</title>
+</head>
+<body class="bmicalc">
+    <header>BMI CALCULATOR</header>
+    <main>
+        <div class="welcome">Welcome to my BMI calculator</div>
+        <div class="pre">Body Mass Index (BMI) is equal to Weight in Kilogram (Kg) divided by the square of Height in Meter(M2)</div>
+        <div class="pre">BMI=Kg/M2</div>
+        <div class="weight">
+            <label for="weight">Weight(KG): </label>
+            <input type="number" name="weight" id="w">
+        </div>
+        <div class="height">
+            <label for="height">Height (M): </label>
+            <input type="number" name="height" id="h">
+        </div>
+        <div class="button">
+            <button type="button" onClick="bmiCalculator()" >Get BMI</button>
+        </div>
+        <div class="result">
+            <p>Your BMI is <b id="myBMI">---</b> </p>
+        </div>
+    </main>
+    <footer>
+        <div>Design with ¶ by Justin Adoga <span id="y"></span></div>
+    </footer>
+</body>
+<script>
+    
+    // var bmi =bmiCalculator(weight, height);
+    // document.getElementById("myBMI").innerHTML = bmi;
+</script>
+</html>
