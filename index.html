@@ -12,21 +12,82 @@
     <header>BMI CALCULATOR</header>
     <main>
         <div class="welcome">Welcome to my BMI calculator</div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="http://">Home</a>
+                </li>
+                <li>
+                    <a href="http://">About</a>
+                </li>
+                <li>
+                    <a href="http://">BMI</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+        <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</p>
+        <p>Use the tool below to compute your BMI.</p>
+            <ul>
+                <li>Enter your weight and height using standard or metric measures.</li>
+                <li>Select "Compute BMI" and your BMI will appear below.</li>
+            </ul>
         <div class="pre">Body Mass Index (BMI) is equal to Weight in Kilogram (Kg) divided by the square of Height in Meter(M2)</div>
         <div class="pre">BMI=Kg/M2</div>
-        <div class="weight">
-            <label for="weight">Weight(KG): </label>
-            <input type="number" name="weight" id="w">
-        </div>
-        <div class="height">
-            <label for="height">Height (M): </label>
-            <input type="number" name="height" id="h">
-        </div>
-        <div class="button">
-            <button type="button" onClick="bmiCalculator()" >Get BMI</button>
+        <div class="container">
+            <!-- <img src="img/img_lights.jpg" alt="snow" style="width: 100%;"> -->
+            <div class="weight">
+                <label for="weight">Weight(KG): </label>
+                <input type="number" name="weight" id="w">
+            </div>
+            <div class="height">
+                <label for="height">Height (M): </label>
+                <input type="number" name="height" id="h">
+            </div>
+            <div class="button">
+                <button type="button" onClick="bmiCalculator()" >Get BMI</button>
+            </div>
         </div>
         <div class="result">
             <p>Your BMI is <b id="myBMI">---</b> </p>
+        </div>
+        <div>
+            <b>BMI Categories to note:</b> 
+            <p>Underweight = < 18.5 </p>
+            <p>Normal weight = 18.5–24.9</p>
+            <p>Overweight = 25–29.9</p>
+            <p>Obesity = BMI of 30 or greater</p>
+        </div>
+        <div>
+            <b>BMI Table:</b>
+            <table border="2px">
+                <tr>
+                    <th>BMI value</th>
+                    <th>Interpretation</th>
+                    <th>Recommendation</th>
+                </tr>
+                <tr>
+                    <td>Less or equals 18.5</td>
+                    <td>Underweight</td>
+                    <td>Consume more calories</td>
+                </tr>
+                <tr>
+                    <td>18.5 to 24.9</td>
+                    <td>Normal weight</td>
+                    <td>Maintain good diet</td>
+                </tr>
+                <tr>
+                    <td>25 to 29.9</td>
+                    <td>Overweight</td>
+                    <td>Consider burning calories</td>
+                </tr>
+                <tr>
+                    <td>30 and above</td>
+                    <td>Obesity</td>
+                    <td>Take drastic actions in calories burning</td>
+                </tr>
+            </table>
+        </div>
         </div>
     </main>
     <footer>
